@@ -27,9 +27,9 @@ return{
             lspconfig.dockerls.setup({
                 capabilities = capabilities
             })
-            lspconfig.docker_compose_language_service.setup({
-                capabilities = capabilities
-            })
+            -- lspconfig.docker_compose_language_service.setup({
+            --     capabilities = capabilities
+            -- })
             lspconfig.pyright.setup{
                 capabilities = capabilities
             }
@@ -37,6 +37,7 @@ return{
             vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
             vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, {})
             vim.keymap.set({'n', 'v'}, '<leader>ca', vim.lsp.buf.code_action, {})
-        end
+            end,
+            dependencies = { 'nvimdev/lspsaga.nvim' },
     },
 }

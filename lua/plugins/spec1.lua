@@ -13,22 +13,24 @@ return {
                 --         crust = "#000000",
                 --     },
                 -- },
-                -- transparent_background = true,
+                transparent_background = true,
                 custom_highlights = function(colors)
                 return {
-                Normal = { bg = "#000000" }, -- Set the background to black
-                NormalFloat = { bg = "#000000" }, -- Optional: Float window background
-                -- Specific plugin backgrounds
-                NeoTreeNormal = { bg = "#000000" },
-                NeoTreeNormalNC = { bg = "#000000" }, -- Non-current window
-                TelescopeNormal = { bg = "#000000" },
-                TelescopeBorder = { bg = "#000000" }, -- Border around Telescope
-                TelescopePromptNormal = { bg = "#000000" },
-                TelescopePromptBorder = { bg = "#000000" },
-                TelescopeResultsNormal = { bg = "#000000" },
-                TelescopeResultsBorder = { bg = "#000000" },
-                TelescopePreviewNormal = { bg = "#000000" },
-                TelescopePreviewBorder = { bg = "#000000" },
+                Normal = {bg = "NONE"}, -- Set the background to black
+                NormalFloat = {bg = "NONE"}, -- Optional: Float window background
+                -- Normal = { bg = "#000000" }, -- Set the background to black
+                -- NormalFloat = { bg = "#000000" }, -- Optional: Float window background
+                -- -- Specific plugin backgrounds
+                -- NeoTreeNormal = { bg = "#000000" },
+                -- NeoTreeNormalNC = { bg = "#000000" }, -- Non-current window
+                -- TelescopeNormal = { bg = "#000000" },
+                -- TelescopeBorder = { bg = "#000000" }, -- Border around Telescope
+                -- TelescopePromptNormal = { bg = "#000000" },
+                -- TelescopePromptBorder = { bg = "#000000" },
+                -- TelescopeResultsNormal = { bg = "#000000" },
+                -- TelescopeResultsBorder = { bg = "#000000" },
+                -- TelescopePreviewNormal = { bg = "#000000" },
+                -- TelescopePreviewBorder = { bg = "#000000" },
                 }
                 end,
                 integrations = {

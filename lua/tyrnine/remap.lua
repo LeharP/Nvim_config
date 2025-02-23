@@ -16,6 +16,8 @@ vim.cmd("set shiftwidth=4")
 vim.g.mapleader = " "
 vim.g.maplocalleader = "//"
 
+-- vim.keymap.del('n', '<c-l>')
+
 vim.keymap.set("n", "<leader>jj", ":Ex<CR>")
 vim.keymap.set('i', "jj", "<Esc>")
 -- vim.keymap.set("x", "<C-_>", "gc")
@@ -25,10 +27,10 @@ vim.opt.clipboard:append("unnamedplus")
 vim.keymap.set("x", "<C-c>", '"+y', { noremap = true, silent = true })
 
 -- moving panes keybind
-vim.keymap.set("n", "<C-j>", ":wincmd j<CR>")
-vim.keymap.set("n", "<C-k>", ":wincmd k<CR>")
-vim.keymap.set("n", "<C-l>", ":wincmd l<CR>")
-vim.keymap.set("n", "<C-h>", ":wincmd h<CR>")
+vim.keymap.set("n", "<A-j>", "<cmd>wincmd j<CR>")
+vim.keymap.set("n", "<A-k>", "<cmd>wincmd k<CR>")
+vim.keymap.set("n", "<A-l>", "<cmd>wincmd l<CR>")
+vim.keymap.set("n", "<A-h>", "<cmd>wincmd h<CR>")
 
 -- relative line numbers
 vim.wo.relativenumber = true
